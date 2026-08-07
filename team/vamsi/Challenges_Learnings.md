@@ -25,7 +25,7 @@ It reported 289 duplicate job ids in our sample. All 289 were repeated blanks.\
 
 **🏆Challenge 4: Performance on 1M rows.**\
 Unusable dashboard performance on 1M rows caused by naively re-reading CSV files per interaction due to memory constraints.\
-Parquet format to dramatically reduce read/write times and file size compared to CSV, and caching `st.cache_data` keeps the active working memory usage low and made UI interactions much faster.\
+Parquet format dramatically reduced read/write times and file size compared to CSV, and caching `st.cache_data` keeps the active working memory usage low and made UI interactions much faster.\
 **🧠Learning: Use Parquet, categorical dtypes, and caching `@st.cache_data` to reduce memory footprint (to 170MB) and latency (0.06s) for live filtering.**\
 <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![alt text](image-4.png)
 <br><br><br>
