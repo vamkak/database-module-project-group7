@@ -41,63 +41,66 @@ project taught us."*
 
 ### Screen 1 — Market Overview *(0:00 – 0:40)*
 
-> The dashboard has seven pages — six pages of evidence and one product page. Let me show
-> you the three that matter most.
+> Our dashboard has seven pages: six pages of **proof**, one page with the **answer**.
+> Let me show you the three key pages.
 >
 > *(Screen 1: Market Overview)*
 >
-> The front page answers "how big is this market?" One million postings, **median salary
-> $3,850 a month**, and **36% of jobs open to people with one year of experience or less**.
+> The front page answers: **how big is this job market?** One million postings. **Middle
+> salary: $3,850 a month.** And **36% of jobs are open to people with one year of
+> experience or less**.
 >
-> Two design choices you'll see everywhere. First, **every chart states its finding in a
-> sentence above it** — we tell you the point, then show the proof. Second, honesty marks:
-> this grey band flags months where data collection was incomplete, so nobody misreads it
-> as a market crash.
+> Two things appear on every page. **Every chart has its main point written in
+> one sentence above it** — point first, proof second. And this **grey area** marks months
+> where our data was not complete, so nobody thinks the market crashed there.
 
 ### Screen 2 — Demand vs Competition *(0:40 – 1:40)*
 
 > *(Screen 2: the opportunity map)*
 >
-> This page answers the first half of our business question: **where are the good odds?**
+> This page answers: **where are the good chances?**
 >
-> Every bubble is a job category. **Up means more jobs. Right means more applicants per
-> seat.** Size is open seats; colour is pay.
+> Every bubble is one job category. **Higher up means more jobs. Further right means more
+> people fighting for each seat.** Bigger bubble, more open seats; darker colour, better
+> pay.
 >
-> **Top-left is the sweet spot — many jobs, almost no queue.** F&B sits there with just
-> **1.0 applicants per seat**. Top-right is the trap. And the spread is enormous: from
-> **0.7** applicants per seat in Personal Care to **11.3** in Social Services — a
-> **sixteen-fold difference** that no job website will ever show you.
+> **Top-left is the best place — many jobs, almost nobody in the queue.** F&B sits there:
+> **one applicant per seat**. Top-right is the trap — many jobs, but everyone wants them.
 >
-> Notice the orange note: competition figures come from the reliable data window my
-> teammate explained. We'd rather show a caveat than a confident wrong number.
+> The gap is huge: from **0.7 applicants per seat** in Personal Care up to **11.3** in
+> Social Services — **sixteen times difference**. No job website will ever show you this.
+>
+> This orange note says competition numbers use only the clean part of the data. **We
+> would rather show a warning than a wrong number.**
 
 ### Screen 3 — Career Recommender *(1:40 – 2:45)*
 
 > *(Screen 3: the Recommender — the product)*
 >
-> And this page answers the question itself: **which track should *I* target?**
+> This page gives the final answer: **which track should *I* choose?**
 >
-> I'm a career switcher: **three years of experience, need at least $4,000 a month.** The
-> tool scores all 215 tracks on four things — openings, pay, competition, and how easy each
-> is to enter for *my* experience — and ranks them.
+> Let me be a real user: **changing careers, three years of experience, need at least
+> $4,000 a month.**
 >
-> Top answer: **IT at mid level** — 69,000 postings, $6,500 median, and 57% of its jobs
-> accept my three years. These bars show **exactly why** it ranked first. Nothing is a
-> black box.
+> The tool checks all 215 tracks on four things — **how many jobs, how good the pay, how
+> many rivals, and how easy it is for me to get in** — then puts them in order.
 >
-> Now watch. Suppose I don't want the best pay in five years — **I need a job in six
-> weeks.** *(drag "Easy for me to enter" up, "High pay" down)*
+> Top answer for me: **IT at mid level**. 69,000 postings, $6,500 middle salary, and 57% of
+> those jobs accept my three years. These coloured bars show **exactly why** it came first.
+> **Nothing is hidden.**
 >
-> **The entire top five changes** — HR, Sales, Education at entry level. Not one survivor
-> from the old list. Same data, different person, different advice — **the score is a set
-> of sliders, not a verdict.**
+> Now watch. What if I don't want the best pay in five years — **what if I need a job in
+> six weeks?** *(drag "Easy for me to enter" up, "High pay" down)*
+>
+> **The whole top five changes** — HR, Sales, Education, at entry level. Not one job from
+> the old list is left. Same data, different person, different answer. **The score is a set
+> of sliders — not a machine telling you what to do.**
 
 ### Handover *(2:45 – 3:00)*
 
-> Six evidence pages, one product page, every number auditable. That's how the dashboard
-> answers the business question.
+> So: six pages of proof, one page with the answer, and every number can be checked.
 >
-> **That's the product. My teammate will close with what this project taught us.**
+> **That's the product. My teammate will now close with what this project taught us.**
 
 ---
 
@@ -122,23 +125,26 @@ project taught us."*
 
 ## Questions you own
 
-**"Aren't the score weights arbitrary?"**
-> Deliberately — that's why they're sliders the user controls, not constants we buried in
-> code. There's no objectively right trade-off between money and speed of hiring. What we
-> guarantee is that the four inputs are measured honestly and every contribution is visible.
+**"Aren't the score weights just your own choice?"**
+> Yes — on purpose. That is exactly why they are sliders the user controls, not fixed
+> numbers we hid in the code. There is no single "right" balance between money and getting
+> hired fast — it depends on the person. What we promise is: the four inputs are measured
+> honestly, and you can see how much each one added to the score.
 
 **"What filters does it have?"**
-> A global sidebar on every page: time period, employment type, seniority, salary range,
-> open-postings-only. Filters recompute everything live from 1.77 million rows in about
-> 0.06 seconds — not from frozen summaries.
+> A filter panel on the left of every page: time period, job type, seniority, salary range,
+> and open-jobs-only. When you change a filter, everything recalculates live from 1.77
+> million rows — in about 0.06 seconds.
 
-**"Why does the map use a log axis?"**
-> Category sizes span a few hundred to 140,000 postings. On a normal axis the small half of
-> the market would be squashed flat. The axis is labelled as logarithmic.
+**"Why does the map use a log scale on the vertical axis?"**
+> Because category sizes go from a few hundred postings up to 140,000. On a normal scale,
+> the smaller half of the market would be squeezed flat at the bottom and you could not
+> see it. The axis is clearly labelled.
 
-**"Does the recommender know anything about me?"**
-> Only your years of experience and salary floor. It ranks market conditions — it doesn't
-> know what you'd enjoy, and the app says so in plain words.
+**"Does the recommender know anything about me personally?"**
+> Only two things: your years of experience and your lowest acceptable salary. It ranks
+> market conditions — it does not know what work you would enjoy. The app says this in
+> plain words on the page.
 
 **If the live demo fails:** switch to the screenshots and the backup table. **Never debug
 in front of the room.**
